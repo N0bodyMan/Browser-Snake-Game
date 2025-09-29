@@ -1,0 +1,21 @@
+:root{
+--bg:#0f1721;
+--card:#0b1220;
+--accent:#10b981;
+--muted:#94a3b8;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{background:linear-gradient(180deg,#071021 0%, var(--bg) 100%);display:flex;align-items:center;justify-content:center;padding:24px;color:#e6eef6}
+.container{width:520px;max-width:96%;}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+h1{margin:0;font-size:1.6rem}
+.meta{display:flex;gap:12px;color:var(--muted)}
+.game-area{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+canvas{display:block;background:#06121a;border-radius:8px;margin:0 auto;max-width:100%}
+.controls{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px}
+button,select{padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+footer{margin-top:10px;text-align:center;color:var(--muted)}
+.overlay{position:relative;margin-top:12px;color:#fff;text-align:center}
+.overlay.hidden{display:none}
+.overlay .message{padding:16px}
